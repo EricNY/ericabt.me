@@ -1,0 +1,120 @@
+@font-face {
+  	font-family: 'Quattrocento';
+	src: url("assets/Quattrocento-Regular.otf") format("opentype");
+}
+
+@font-face {
+  	font-family: 'LeagueSpartan';
+	src: url("assets/LeagueSpartan-Bold.otf") format("opentype");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'Quattrocento';
+	margin: 0px;
+	line-height: 1.5em;
+}
+/*ul { list-style-type: none; }*/
+h1 { 
+	font-family: 'LeagueSpartan'; 
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+}
+
+p { padding: 0px 40px; }
+
+#wrapper {
+	display: grid;
+	grid-template-rows: 1fr 2fr 2fr 2fr 1fr 1fr;
+	grid-template-columns: 20vw auto;	
+}
+
+#sidebar {
+	background-color: #26619c;
+	position: fixed;
+	width: 20vw;
+	height: 100%;
+}
+#sidebar h1 { padding-bottom: 0px; }
+#sidebar ul { list-style-type: none; }
+#sidebar li { padding: 5px 0px; }
+#sidebar li:active { color: green; }
+#sidebar a { 
+	text-decoration: none; 
+	font-family: 'LeagueSpartan';
+	font-size: 18px;
+}
+#sidebar a:visited { color: none; }
+
+#objective {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-color: #dcd5c2;
+	text-align: center;
+}
+
+#skills {
+	grid-column-start: 2;
+	grid-column-end: 3: 
+	grid-row-start: 2;
+	grid-row-end: 3;
+	/*background-color: #ff3800;*/
+}
+#skills > div {
+	display: flex;
+}
+
+#experience {
+	grid-column-start: 2;
+	grid-column-end: 3: 
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #dcd5c2;
+}
+.duration {
+	font-family: 'LeagueSpartan';
+	padding-left: 40px;
+}
+
+#education {
+	grid-column-start: 2;
+	grid-column-end: 3: 
+	grid-row-start: 4;
+	grid-row-end: 5;
+	/*background-color: #ff3800;*/
+}
+.school { padding-bottom: 20px; }
+.school > h4 { padding-left: 40px; }
+
+#personal {
+	grid-column-start: 2;
+	grid-column-end: 3: 
+	grid-row-start: 5;
+	grid-row-end: 6;
+	background-color: #dcd5c2;
+}
+
+#contact {
+	grid-column-start: 2;
+	grid-column-end: 3: 
+	grid-row-start: 6;
+	grid-row-end: 7;
+	/*background-color: #ff3800;*/
+}
+
+.icons {
+  height:200px;
+  width: 200px;
+  background-image: url("assets/icons.jpg");
+}
+
+.icon1{
+  background-position: 0 0
+}
+
+.icon2{
+  background-position: 30px 0
+}
